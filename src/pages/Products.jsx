@@ -85,9 +85,9 @@ const Products = () => {
               key={product.id}
               className="bg-gradient-to-br from-gray-50 to-gray-200 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 relative overflow-hidden"
             >
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-600 to-purple-600"></div>
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#4a4237] to-[#655949]"></div>
               <div className="text-5xl mb-4">🌸</div>
-              <span className="inline-block bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
+              <span className="inline-block bg-gradient-to-r from-[#4a4237] to-[#655949] text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
                 {product.category}
               </span>
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
@@ -96,10 +96,10 @@ const Products = () => {
               <p className="text-gray-600 leading-relaxed mb-4">
                 {product.description}
               </p>
-              <div className="text-xl font-bold text-indigo-600 mb-4">
+              <div className="text-xl font-bold text-[#655949] mb-4">
                 {product.price}
               </div>
-              <button className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 px-6 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+              <button className="w-full bg-gradient-to-r from-[#4a4237] to-[#655949] text-white py-3 px-6 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
                 Learn More
               </button>
             </div>
@@ -114,7 +114,7 @@ const Products = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border-2 border-gray-100 hover:border-indigo-600"
+                className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border-2 border-gray-100 hover:border-[#655949]"
               >
                 <div className="text-5xl mb-4">{service.icon}</div>
                 <h4 className="text-xl font-semibold text-gray-800 mb-2">

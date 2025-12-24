@@ -13,7 +13,7 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="bg-white p-10 rounded-2xl shadow-lg">
-            <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-[#4a4237] to-[#655949] bg-clip-text text-transparent">
               Our Story
             </h3>
             <p className="text-gray-600 leading-relaxed mb-4 text-lg">
@@ -29,7 +29,7 @@ const About = () => {
           </div>
 
           <div className="bg-white p-10 rounded-2xl shadow-lg">
-            <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            <h3 className="text-3xl font-bold mb-6 bg-gradient-to-r from-[#4a4237] to-[#655949] bg-clip-text text-transparent">
               Our Mission
             </h3>
             <p className="text-gray-600 leading-relaxed text-lg">
@@ -84,22 +84,22 @@ const About = () => {
             Why Choose Us?
           </h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition-all duration-300 hover:translate-x-2">
+            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-[#4a4237] hover:to-[#655949] hover:text-white transition-all duration-300 hover:translate-x-2">
               ✓ Extensive collection of premium and niche fragrances
             </li>
-            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition-all duration-300 hover:translate-x-2">
+            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-[#4a4237] hover:to-[#655949] hover:text-white transition-all duration-300 hover:translate-x-2">
               ✓ Expert staff with in-depth fragrance knowledge
             </li>
-            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition-all duration-300 hover:translate-x-2">
+            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-[#4a4237] hover:to-[#655949] hover:text-white transition-all duration-300 hover:translate-x-2">
               ✓ Competitive pricing and special promotions
             </li>
-            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition-all duration-300 hover:translate-x-2">
+            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-[#4a4237] hover:to-[#655949] hover:text-white transition-all duration-300 hover:translate-x-2">
               ✓ Convenient local service and delivery
             </li>
-            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition-all duration-300 hover:translate-x-2">
+            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-[#4a4237] hover:to-[#655949] hover:text-white transition-all duration-300 hover:translate-x-2">
               ✓ Gift wrapping and special occasion packages
             </li>
-            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-indigo-600 hover:to-purple-600 hover:text-white transition-all duration-300 hover:translate-x-2">
+            <li className="text-gray-700 text-lg p-4 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg hover:bg-gradient-to-r hover:from-[#4a4237] hover:to-[#655949] hover:text-white transition-all duration-300 hover:translate-x-2">
               ✓ Customer satisfaction guarantee
             </li>
           </ul>

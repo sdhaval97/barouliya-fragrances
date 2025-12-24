@@ -16,11 +16,11 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-r from-indigo-600 to-purple-600 sticky top-0 z-50 shadow-lg">
+    <nav className="bg-gradient-to-br from-[#655949] via-[#7a6858] to-[#655949] sticky top-0 z-50 shadow-2xl backdrop-blur-sm border-b border-[#4a4237]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-5">
           <div className="navbar-brand">
-            <h1 className="text-white text-2xl sm:text-3xl font-semibold tracking-wide">
+            <h1 className="text-white text-2xl sm:text-3xl font-bold tracking-wide drop-shadow-lg">
               Barouliya Fragrances
             </h1>
           </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
               <a
                 href="#home"
                 onClick={() => scrollToSection('home')}
-                className="text-white font-medium px-4 py-2 rounded-md hover:bg-white/20 transition-all duration-300 hover:-translate-y-0.5 inline-block"
+                className="text-white font-medium px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 hover:-translate-y-0.5 inline-block shadow-md hover:shadow-lg"
               >
                 Home
               </a>
@@ -50,7 +50,7 @@ const Navbar = () => {
               <a
                 href="#products"
                 onClick={() => scrollToSection('products')}
-                className="text-white font-medium px-4 py-2 rounded-md hover:bg-white/20 transition-all duration-300 hover:-translate-y-0.5 inline-block"
+                className="text-white font-medium px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 hover:-translate-y-0.5 inline-block shadow-md hover:shadow-lg"
               >
                 Products & Services
               </a>
@@ -59,7 +59,7 @@ const Navbar = () => {
               <a
                 href="#about"
                 onClick={() => scrollToSection('about')}
-                className="text-white font-medium px-4 py-2 rounded-md hover:bg-white/20 transition-all duration-300 hover:-translate-y-0.5 inline-block"
+                className="text-white font-medium px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 hover:-translate-y-0.5 inline-block shadow-md hover:shadow-lg"
               >
                 About Us
               </a>
@@ -68,7 +68,7 @@ const Navbar = () => {
               <a
                 href="#contact"
                 onClick={() => scrollToSection('contact')}
-                className="text-white font-medium px-4 py-2 rounded-md hover:bg-white/20 transition-all duration-300 hover:-translate-y-0.5 inline-block"
+                className="text-white font-medium px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 hover:-translate-y-0.5 inline-block shadow-md hover:shadow-lg"
               >
                 Contact Us
               </a>
@@ -83,7 +83,7 @@ const Navbar = () => {
               <a
                 href="#home"
                 onClick={() => scrollToSection('home')}
-                className="text-white font-medium block py-3 px-4 hover:bg-white/20 rounded-md transition-all duration-300"
+                className="text-white font-medium block py-3 px-4 hover:bg-white/30 rounded-lg transition-all duration-300"
               >
                 Home
               </a>
@@ -92,7 +92,7 @@ const Navbar = () => {
               <a
                 href="#products"
                 onClick={() => scrollToSection('products')}
-                className="text-white font-medium block py-3 px-4 hover:bg-white/20 rounded-md transition-all duration-300"
+                className="text-white font-medium block py-3 px-4 hover:bg-white/30 rounded-lg transition-all duration-300"
               >
                 Products & Services
               </a>
@@ -101,7 +101,7 @@ const Navbar = () => {
               <a
                 href="#about"
                 onClick={() => scrollToSection('about')}
-                className="text-white font-medium block py-3 px-4 hover:bg-white/20 rounded-md transition-all duration-300"
+                className="text-white font-medium block py-3 px-4 hover:bg-white/30 rounded-lg transition-all duration-300"
               >
                 About Us
               </a>
@@ -110,7 +110,7 @@ const Navbar = () => {
               <a
                 href="#contact"
                 onClick={() => scrollToSection('contact')}
-                className="text-white font-medium block py-3 px-4 hover:bg-white/20 rounded-md transition-all duration-300"
+                className="text-white font-medium block py-3 px-4 hover:bg-white/30 rounded-lg transition-all duration-300"
               >
                 Contact Us
               </a>

@@ -3,7 +3,7 @@ const Home = () => {
     <section id="home" className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-200 py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-[#4a4237] to-[#655949] bg-clip-text text-transparent">
             Welcome to Barouliya Fragrances
           </h1>
           <p className="text-2xl sm:text-3xl text-gray-700 font-medium mb-6">
@@ -15,7 +15,7 @@ const Home = () => {
           </p>
           <button
             onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}
-            className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-10 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+            className="bg-gradient-to-r from-[#4a4237] to-[#655949] text-white px-10 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
           >
             Explore Our Collection
           </button>

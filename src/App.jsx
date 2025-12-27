@@ -9,11 +9,13 @@ function App() {
   return (
     <div className="w-full overflow-x-hidden">
       <Navbar />
-      <Home />
-      <About />
-      <WhatWeDo />
-      <Products />
-      <Contact />
+      <div className="pt-20 md:pt-24">
+        <Home />
+        <About />
+        <WhatWeDo />
+        <Products />
+        <Contact />
+      </div>
     </div>
   );
 }

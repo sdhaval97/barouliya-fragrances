@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-br from-[#2B3D4F] via-[#3d5268] to-[#2B3D4F] sticky top-0 z-50 shadow-2xl backdrop-blur-sm">
+    <nav className="bg-gradient-to-br from-[#2B3D4F] via-[#3d5268] to-[#2B3D4F] fixed top-0 left-0 right-0 z-50 shadow-2xl backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-5">
           <div className="navbar-brand flex items-center gap-3">

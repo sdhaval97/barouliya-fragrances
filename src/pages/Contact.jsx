@@ -169,7 +169,11 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             {/* About Section */}
             <div>
-              <h3 className="text-xl font-bold mb-4 drop-shadow-lg">Barouliya Fragrances</h3>
+              <img
+                src="/images/logo_without_name.png"
+                alt="Barouliya Fragrances"
+                className="h-16 mb-4 drop-shadow-lg"
+              />
               <p className="text-sm opacity-90 leading-relaxed">
                 Your trusted destination for premium fragrances and exceptional service.
               </p>

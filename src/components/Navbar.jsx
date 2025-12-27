@@ -20,9 +20,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-5">
           <div className="navbar-brand">
-            <h1 className="text-white text-2xl sm:text-3xl font-bold tracking-wide drop-shadow-lg">
-              Barouliya Fragrances
-            </h1>
+            <img
+              src="/images/logo_with_name.png"
+              alt="Barouliya Fragrances"
+              className="h-12 sm:h-14 drop-shadow-lg"
+            />
           </div>
 
           <button

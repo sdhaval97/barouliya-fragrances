@@ -1,7 +1,8 @@
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Products from './pages/Products';
 import About from './pages/About';
+import WhatWeDo from './pages/WhatWeDo';
+import Products from './pages/Products';
 import Contact from './pages/Contact';
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
     <div className="w-full overflow-x-hidden">
       <Navbar />
       <Home />
-      <Products />
       <About />
+      <WhatWeDo />
+      <Products />
       <Contact />
     </div>
   );

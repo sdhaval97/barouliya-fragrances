@@ -1,130 +1,110 @@
 const Products = () => {
-  const products = [
+  const productCategories = [
     {
       id: 1,
-      name: "Luxury Eau de Parfum",
-      category: "Premium Collection",
-      description: "Long-lasting fragrance with floral and woody notes",
-      price: "From $80"
+      category: "Personal Care",
+      icon: "🧴",
+      products: ["Handwash", "Hand sanitizer", "Wet wipes", "Hair oil", "Shampoo", "Hair conditioner", "Body wash", "Toilet soap"]
     },
     {
       id: 2,
-      name: "Fresh Cologne",
-      category: "Daily Wear",
-      description: "Light and refreshing scent perfect for everyday use",
-      price: "From $45"
+      category: "Beauty Care",
+      icon: "💄",
+      products: ["Body lotion", "Face cream", "Facial scrub", "Makeup preparation", "Nail polish remover", "Talcum powder", "Hair gel & cream", "Shaving Preparation"]
     },
     {
       id: 3,
-      name: "Oriental Oud",
-      category: "Exclusive Collection",
-      description: "Rich and exotic oud-based fragrance",
-      price: "From $120"
+      category: "Fabric Care",
+      icon: "👕",
+      products: ["Detergent powder", "Detergent cake", "Laundry soap", "Fabric softener", "Liquid detergent"]
     },
     {
       id: 4,
-      name: "Floral Bouquet",
-      category: "Women's Collection",
-      description: "Elegant blend of rose, jasmine, and lily",
-      price: "From $65"
+      category: "Home Care",
+      icon: "🏠",
+      products: ["Dishwash paste/powder", "Dishwash bar", "Dishwash liquid", "Disinfectants", "Household cleaner"]
     },
     {
       id: 5,
-      name: "Sporty Fresh",
-      category: "Men's Collection",
-      description: "Energetic and invigorating scent for active lifestyle",
-      price: "From $55"
+      category: "Air Care",
+      icon: "🕯️",
+      products: ["Scented candles", "Room freshener", "Incense stick", "Reed diffuser"]
     },
     {
       id: 6,
-      name: "Gift Sets",
-      category: "Special Occasions",
-      description: "Beautifully packaged fragrance collections",
-      price: "From $90"
-    }
-  ];
-
-  const services = [
-    {
-      icon: "🎯",
-      title: "Personalized Consultation",
-      description: "Get expert advice to find your perfect scent"
+      category: "Fine Fragrances",
+      icon: "💎",
+      products: ["Deodorant", "Roll-on", "Eau de parfum", "Eau de toilette"]
     },
     {
-      icon: "🎁",
-      title: "Gift Wrapping",
-      description: "Complimentary elegant gift wrapping service"
-    },
-    {
-      icon: "💝",
-      title: "Custom Orders",
-      description: "Special orders for exclusive fragrances"
-    },
-    {
-      icon: "🔄",
-      title: "Exchange Policy",
-      description: "Hassle-free exchange within 7 days"
+      id: 7,
+      category: "Specialty",
+      icon: "✨",
+      products: ["Scented Papers", "Aroma for wall paints", "Scented pen inks", "Scented Artificial Flowers"]
     }
   ];
 
   return (
-    <section id="products" className="min-h-screen bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <section id="products" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-2">
-            Products & Services
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <div className="inline-block mb-4">
+            <span className="text-[#C9A86A] text-sm font-medium tracking-wider uppercase">Our Products</span>
+          </div>
+          <h2 className="text-4xl sm:text-5xl font-serif text-[#2B3D4F] mb-6" style={{ fontFamily: "'Playfair Display', serif" }}>
+            Fragrance Solutions for Every Industry
           </h2>
-          <p className="text-lg sm:text-xl text-gray-600">
-            Explore our exquisite collection of fragrances
+          <div className="h-px w-24 bg-[#C9A86A] mx-auto mb-8"></div>
+          <p className="text-lg text-[#6B7280] max-w-3xl mx-auto">
+            From personal care to specialty applications, we create bespoke fragrances that elevate your products
+            and captivate your customers.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {products.map(product => (
+        {/* Product Categories Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          {productCategories.map((category) => (
             <div
-              key={product.id}
-              className="bg-gradient-to-br from-gray-50 to-gray-200 p-8 rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-3 transition-all duration-300 relative overflow-hidden"
+              key={category.id}
+              className="group bg-gradient-to-br from-white to-[#FAF8F5] border border-gray-100 rounded-xl p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#4a4237] to-[#655949]"></div>
-              <div className="text-5xl mb-4">🌸</div>
-              <span className="inline-block bg-gradient-to-r from-[#4a4237] to-[#655949] text-white px-4 py-1 rounded-full text-sm font-semibold mb-4">
-                {product.category}
-              </span>
-              <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                {product.name}
-              </h3>
-              <p className="text-gray-600 leading-relaxed mb-4">
-                {product.description}
-              </p>
-              <div className="text-xl font-bold text-[#655949] mb-4">
-                {product.price}
+              <div className="flex items-center gap-3 mb-4 pb-4 border-b border-gray-200">
+                <span className="text-3xl">{category.icon}</span>
+                <h3 className="text-xl font-serif text-[#2B3D4F]" style={{ fontFamily: "'Playfair Display', serif" }}>
+                  {category.category}
+                </h3>
               </div>
-              <button className="w-full bg-gradient-to-r from-[#4a4237] to-[#655949] text-white py-3 px-6 rounded-full font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
-                Learn More
-              </button>
+              <ul className="space-y-2">
+                {category.products.map((product, index) => (
+                  <li key={index} className="text-[#6B7280] text-sm flex items-start group/item">
+                    <span className="text-[#C9A86A] mr-2 mt-1 text-xs">▪</span>
+                    <span className="group-hover/item:text-[#2B3D4F] transition-colors duration-200">{product}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 pt-12 border-t-2 border-gray-200">
-          <h3 className="text-3xl sm:text-4xl font-bold text-gray-800 text-center mb-10">
-            Our Services
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {services.map((service, index) => (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 border-2 border-gray-100 hover:border-[#655949]"
-              >
-                <div className="text-5xl mb-4">{service.icon}</div>
-                <h4 className="text-xl font-semibold text-gray-800 mb-2">
-                  {service.title}
-                </h4>
-                <p className="text-gray-600 leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            ))}
+        {/* CTA Banner */}
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-[#2B3D4F] to-[#3d5268] p-12 text-center text-white">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full transform translate-x-1/2 -translate-y-1/2"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-5 rounded-full transform -translate-x-1/2 translate-y-1/2"></div>
+
+          <div className="relative z-10">
+            <h3 className="text-3xl sm:text-4xl font-serif mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
+              Looking for Custom Formulations?
+            </h3>
+            <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
+              Our team of expert perfumers can create unique, tailor-made fragrances specifically designed for your brand.
+            </p>
+            <button
+              onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+              className="bg-white text-[#2B3D4F] px-8 py-4 rounded-full font-medium hover:shadow-xl transition-all duration-300 hover:scale-105"
+            >
+              Get in Touch
+            </button>
           </div>
         </div>
       </div>

@@ -16,14 +16,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gradient-to-br from-[#655949] via-[#7a6858] to-[#655949] sticky top-0 z-50 shadow-2xl backdrop-blur-sm border-b border-[#4a4237]">
+    <nav className="bg-gradient-to-br from-[#2B3D4F] via-[#3d5268] to-[#2B3D4F] sticky top-0 z-50 shadow-2xl backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-5">
-          <div className="navbar-brand">
+          <div className="navbar-brand flex items-center gap-3">
             <img
-              src="/images/logo_with_name.png"
-              alt="Barouliya Fragrances"
-              className="h-12 sm:h-14 drop-shadow-lg"
+              src="/images/logo (2).png"
+              alt="Barouliya Fragrancia"
+              className="h-14 sm:h-16 md:h-20 rounded-lg drop-shadow-lg"
             />
           </div>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
             </div>
           </button>
 
-          <ul className="hidden md:flex gap-8">
+          <ul className="hidden md:flex gap-6">
             <li>
               <a
                 href="#home"
@@ -50,20 +50,29 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#products"
-                onClick={() => scrollToSection('products')}
-                className="text-white font-medium px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 hover:-translate-y-0.5 inline-block shadow-md hover:shadow-lg"
-              >
-                Products & Services
-              </a>
-            </li>
-            <li>
-              <a
                 href="#about"
                 onClick={() => scrollToSection('about')}
                 className="text-white font-medium px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 hover:-translate-y-0.5 inline-block shadow-md hover:shadow-lg"
               >
-                About Us
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#what-we-do"
+                onClick={() => scrollToSection('what-we-do')}
+                className="text-white font-medium px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 hover:-translate-y-0.5 inline-block shadow-md hover:shadow-lg"
+              >
+                Expertise
+              </a>
+            </li>
+            <li>
+              <a
+                href="#products"
+                onClick={() => scrollToSection('products')}
+                className="text-white font-medium px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 hover:-translate-y-0.5 inline-block shadow-md hover:shadow-lg"
+              >
+                Products
               </a>
             </li>
             <li>
@@ -72,14 +81,14 @@ const Navbar = () => {
                 onClick={() => scrollToSection('contact')}
                 className="text-white font-medium px-4 py-2 rounded-lg hover:bg-white/30 transition-all duration-300 hover:-translate-y-0.5 inline-block shadow-md hover:shadow-lg"
               >
-                Contact Us
+                Contact
               </a>
             </li>
           </ul>
         </div>
 
         {/* Mobile menu */}
-        <div className={`md:hidden overflow-hidden transition-all duration-300 ${isMenuOpen ? 'max-h-64 pb-4' : 'max-h-0'}`}>
+        <div className={`md:hidden overflow-hidden transition-all duration-300 ${isMenuOpen ? 'max-h-96 pb-4' : 'max-h-0'}`}>
           <ul className="flex flex-col gap-2">
             <li className="text-center">
               <a
@@ -92,20 +101,29 @@ const Navbar = () => {
             </li>
             <li className="text-center">
               <a
-                href="#products"
-                onClick={() => scrollToSection('products')}
-                className="text-white font-medium block py-3 px-4 hover:bg-white/30 rounded-lg transition-all duration-300"
-              >
-                Products & Services
-              </a>
-            </li>
-            <li className="text-center">
-              <a
                 href="#about"
                 onClick={() => scrollToSection('about')}
                 className="text-white font-medium block py-3 px-4 hover:bg-white/30 rounded-lg transition-all duration-300"
               >
-                About Us
+                About
+              </a>
+            </li>
+            <li className="text-center">
+              <a
+                href="#what-we-do"
+                onClick={() => scrollToSection('what-we-do')}
+                className="text-white font-medium block py-3 px-4 hover:bg-white/30 rounded-lg transition-all duration-300"
+              >
+                Expertise
+              </a>
+            </li>
+            <li className="text-center">
+              <a
+                href="#products"
+                onClick={() => scrollToSection('products')}
+                className="text-white font-medium block py-3 px-4 hover:bg-white/30 rounded-lg transition-all duration-300"
+              >
+                Products
               </a>
             </li>
             <li className="text-center">
@@ -114,7 +132,7 @@ const Navbar = () => {
                 onClick={() => scrollToSection('contact')}
                 className="text-white font-medium block py-3 px-4 hover:bg-white/30 rounded-lg transition-all duration-300"
               >
-                Contact Us
+                Contact
               </a>
             </li>
           </ul>

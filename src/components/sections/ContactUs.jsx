@@ -6,9 +6,9 @@ const ContactUs = () => {
              <div className="container mx-auto px-6 max-w-4xl">
                  <div className="text-center mb-16 flex flex-col items-center">
                     <img 
-                        src="/images/logo_with_name.png" 
+                        src="/images/logo (2).png" 
                         alt="Barouliya Fragrancia" 
-                        className="h-24 md:h-32 w-auto object-contain mb-8 bg-white/5 rounded-lg p-2" 
+                        className="h-24 md:h-32 w-auto object-contain mb-8 rounded-3xl shadow-lg" 
                     />
                     <motion.h2 
                         initial={{ opacity: 0, y: 20 }}

@@ -34,7 +34,7 @@ const WhatWeDo = () => {
                         className="lg:w-1/2"
                     >
                         <h2 className="text-5xl md:text-6xl font-serif mb-10 text-rich-black">
-                            What <span className="italic font-light">we do</span>
+                            What <span className="italic font-light">We Do</span>
                         </h2>
                         
                         <div className="space-y-6 text-lg text-gray-700 leading-relaxed font-light">

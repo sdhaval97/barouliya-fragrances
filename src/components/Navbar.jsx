@@ -47,7 +47,7 @@ const Navbar = () => {
                     onClick={() => scrollToSection('home')}
                 >
                      <img 
-                        src="/images/Bfpl Hi-Res logo only.png" 
+                        src="/images/logo_without_name.png" 
                         alt="Barouliya Logo" 
                         className="h-14 w-auto object-contain drop-shadow-md"
                      />
@@ -67,8 +67,11 @@ const Navbar = () => {
                         </li>
                     ))}
                     <li>
-                         <button className="border border-gold text-gold hover:bg-gold hover:text-rich-black px-6 py-2 uppercase text-xs tracking-widest font-bold transition-all duration-300">
-                            Shop Now
+                         <button 
+                            onClick={() => scrollToSection('contact')}
+                            className="border border-gold text-gold hover:bg-gold hover:text-rich-black px-6 py-2 uppercase text-xs tracking-widest font-bold transition-all duration-300"
+                        >
+                            Contact Us
                         </button>
                     </li>
                 </ul>

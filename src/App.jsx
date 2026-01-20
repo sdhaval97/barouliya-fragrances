@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import HomeBanner from './components/sections/HomeBanner';
+import OurStory from './components/sections/OurStory';
 import WhatWeDo from './components/sections/WhatWeDo';
 import OurProducts from './components/sections/OurProducts';
 import SignatureOffering from './components/sections/SignatureOffering';
@@ -16,6 +17,7 @@ function App() {
       <Navbar />
       <main>
         <HomeBanner />
+        <OurStory />
         <WhatWeDo />
         <OurProducts />
         <SignatureOffering />

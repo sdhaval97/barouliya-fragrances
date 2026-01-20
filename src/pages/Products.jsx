@@ -4,43 +4,43 @@ const Products = () => {
       id: 1,
       category: "Personal Care",
       icon: "🧴",
-      products: ["Handwash", "Hand sanitizer", "Wet wipes", "Hair oil", "Shampoo", "Hair conditioner", "Body wash", "Toilet soap"]
+      products: ["Handwash", "Hand Sanitizer", "Wet Wipes", "Hair Oil", "Shampoo", "Hair Conditioner", "Body Wash", "Toilet Soap"]
     },
     {
       id: 2,
       category: "Beauty Care",
       icon: "💄",
-      products: ["Body lotion", "Face cream", "Facial scrub", "Makeup preparation", "Nail polish remover", "Talcum powder", "Hair gel & cream", "Shaving Preparation"]
+      products: ["Body Lotion", "Face Cream", "Facial Scrub", "Makeup Preparation", "Nail Polish Remover", "Talcum Powder", "Hair Gel & Cream", "Shaving Preparation"]
     },
     {
       id: 3,
       category: "Fabric Care",
       icon: "👕",
-      products: ["Detergent powder", "Detergent cake", "Laundry soap", "Fabric softener", "Liquid detergent"]
+      products: ["Detergent Powder", "Detergent Cake", "Laundry Soap", "Fabric Softener", "Liquid Detergent", "Laundry Detergent Strip", "Detergent Pods"]
     },
     {
       id: 4,
       category: "Home Care",
       icon: "🏠",
-      products: ["Dishwash paste/powder", "Dishwash bar", "Dishwash liquid", "Disinfectants", "Household cleaner"]
+      products: ["Dishwash Paste/Powder", "Dishwash Bar", "Dishwash Liquid", "Disinfectants", "Household Cleaner"]
     },
     {
       id: 5,
       category: "Air Care",
       icon: "🕯️",
-      products: ["Scented candles", "Room freshener", "Incense stick", "Reed diffuser"]
+      products: ["Scented Candles", "Room Freshener", "Incense Stick", "Reed Diffuser", "Car Freshener", "Potpourri And Scented Beads", "Dhoop Batti", "Sambhrani Cups", "Automatic Spray Diffuser", "Aerosol Air Freshener"]
     },
     {
       id: 6,
       category: "Fine Fragrances",
       icon: "💎",
-      products: ["Deodorant", "Roll-on", "Eau de parfum", "Eau de toilette"]
+      products: ["Deodorant", "Roll-On", "Eau De Parfum", "Eau De Toilette", "Eau De Cologne", "Attar", "Elixir", "Solid Perfume"]
     },
     {
       id: 7,
       category: "Specialty",
       icon: "✨",
-      products: ["Scented Papers", "Aroma for wall paints", "Scented pen inks", "Scented Artificial Flowers"]
+      products: ["Scented Papers", "Aroma For Wall Paints", "Scented Pen Inks", "Scented Artificial Flowers"]
     }
   ];
 

@@ -158,6 +158,36 @@ const Contact = () => {
             </form>
           </div>
         </div>
+
+        {/* Google Maps Section */}
+        <div className="mt-16 bg-white rounded-2xl p-4 shadow-xl border border-gray-200">
+           <div className="relative w-full h-[400px] rounded-xl overflow-hidden mb-6">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15072.292298916473!2d72.9346324554199!3d19.192010400000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bc2270c4d685%3A0xf8ee412d00af6654!2sBAROULIYA%20FRAGRANCIA%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1768919165151!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="100%" 
+                    style={{ border: 0 }} 
+                    allowFullScreen="" 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Barouliya Fragrances Location"
+                ></iframe>
+           </div>
+           
+           <div className="text-center">
+                <a 
+                    href="https://www.google.com/maps/place/BAROULIYA+FRAGRANCIA+PVT.+LTD./@19.1920104,72.9346325,14z/data=!4m6!3m5!1s0x3be7bc2270c4d685:0xf8ee412d00af6654!8m2!3d19.1920104!4d72.9346325!16s%2Fg%2F11hzdv_z_5?entry=ttu" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#4a4237] text-white px-8 py-3 rounded-full hover:bg-[#655949] transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+                >
+                    <span>Open in Google Maps</span>
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                </a>
+           </div>
+        </div>
         </div>
       </div>
 

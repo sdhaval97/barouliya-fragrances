@@ -6,43 +6,43 @@ const productCategories = [
         id: "personal-care",
         label: "Personal Care",
         image: "https://images.unsplash.com/photo-1556228720-1957be979ea4?q=80&w=800",
-        items: ["Handwash", "Hand sanitizer", "Wet wipes", "Hair oil", "Shampoo", "Hair conditioner", "Body wash", "Toilet soap"]
+        items: ["Handwash", "Hand Sanitizer", "Wet Wipes", "Hair Oil", "Shampoo", "Hair Conditioner", "Body Wash", "Toilet Soap"]
     },
     {
         id: "beauty-care",
         label: "Beauty Care",
         image: "https://images.unsplash.com/photo-1571781565023-40f8d4752541?q=80&w=800",
-        items: ["Body lotion", "Face cream", "Facial scrub", "Makeup preparation", "Nail polish remover", "Talcum powder", "Hair gel & cream", "Shaving Preparation"]
+        items: ["Body Lotion", "Face Cream", "Facial Scrub", "Makeup Preparation", "Nail Polish Remover", "Talcum Powder", "Hair Gel & Cream", "Shaving Preparation"]
     },
     {
         id: "fabric-care",
         label: "Fabric Care",
         image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=800",
-        items: ["Detergent cake", "Detergent powder", "Laundry soap", "Fabric softener", "Liquid detergent"]
+        items: ["Detergent Cake", "Detergent Powder", "Laundry Soap", "Fabric Softener", "Liquid Detergent", "Laundry Detergent Strip", "Detergent Pods"]
     },
     {
         id: "home-care",
         label: "Home Care",
         image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800",
-        items: ["Dishwash paste/powder", "Dishwash bar", "Dishwash liquid", "Disinfectants", "Household cleaner"]
+        items: ["Dishwash Paste/Powder", "Dishwash Bar", "Dishwash Liquid", "Disinfectants", "Household Cleaner"]
     },
     {
         id: "fine-fragrances",
         label: "Fine Fragrances",
         image: "https://images.unsplash.com/photo-1523293188086-b51292955d2c?q=80&w=800",
-        items: ["Deodorant", "Roll-on", "Eau de parfum", "Eau de toilette"]
+        items: ["Deodorant", "Roll-On", "Eau De Parfum", "Eau De Toilette", "Eau De Cologne", "Attar", "Elixir", "Solid Perfume"]
     },
     {
         id: "air-care",
         label: "Air Care",
         image: "https://images.unsplash.com/photo-1602523961358-f9f03dd557db?q=80&w=800",
-        items: ["Scented candles", "Room freshener", "Incense stick", "Reed diffuser"]
+        items: ["Scented Candles", "Room Freshener", "Incense Stick", "Reed Diffuser", "Car Freshener", "Potpourri And Scented Beads", "Dhoop Batti", "Sambhrani Cups", "Automatic Spray Diffuser", "Aerosol Air Freshener"]
     },
     {
         id: "others",
         label: "Others",
         image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=800",
-        items: ["Scented Papers", "Aroma for wall paints", "Scented pen inks", "Scented Artificial Flowers"]
+        items: ["Scented Papers", "Aroma For Wall Paints", "Scented Pen Inks", "Scented Artificial Flowers"]
     }
 ];
 

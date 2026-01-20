@@ -52,11 +52,11 @@ const BrandsTrusted = () => {
                     }}
                 >
                     {brands.map((brand, index) => (
-                        <div key={index} className="flex-shrink-0 w-32 md:w-40 opacity-70 hover:opacity-100 transition-opacity duration-300 filter grayscale hover:grayscale-0">
+                        <div key={index} className="flex-shrink-0 w-32 md:w-40 opacity-80 hover:opacity-100 transition-opacity duration-300">
                             <img 
                                 src={brand.logo} 
                                 alt={brand.name} 
-                                className="w-full h-auto object-contain"
+                                className="w-full h-auto object-contain rounded-[8px] shadow-[0_8px_30px_rgba(0,0,0,0.12)] bg-white p-2"
                             />
                         </div>
                     ))}

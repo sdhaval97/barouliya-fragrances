@@ -13,7 +13,7 @@ const EncapFragrance = () => {
         <section className="py-24 bg-cream relative">
            {/* Section Header */}
            <div className="container mx-auto px-6 mb-16">
-               <div className="flex flex-col md:flex-row items-end justify-between border-b border-rich-black/10 pb-8">
+               <div className="flex flex-col md:flex-row items-center justify-between border-b border-rich-black/10 pb-8">
                    <motion.div 
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ const EncapFragrance = () => {
                    </motion.div>
                </div>
                
-               <div className="mt-12 text-lg text-gray-700 font-light leading-relaxed max-w-4xl">
+               <div className="mt-12 text-lg text-gray-700 font-light leading-relaxed max-w-4xl mx-auto text-justify">
                    <p>
                        <span className="font-semibold">ENCAP fragrance</span> or Encapsulated perfumes are a type of fragrance technology where the perfume molecules are enclosed within tiny capsules, usually made of a biodegradable polymer or other materials. These capsules protect the fragrance until they are activated, typically through physical action like rubbing, pressing, or spraying. When the capsules break open, they release the scent in a controlled manner, offering a longer-lasting fragrance experience compared to traditional perfumes.
                    </p>

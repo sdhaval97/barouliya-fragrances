@@ -43,9 +43,9 @@ const HomeBanner = () => {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 0.5 }}
-                        className="text-5xl md:text-7xl lg:text-8xl font-serif text-white mb-6 tracking-wide drop-shadow-lg"
+                        className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 tracking-wide drop-shadow-lg"
                     >
-                        Barouliya <br /> <span className="text-gold font-light italic">Fragrancia</span>
+                        BAROULIYA FRAGRANCIA <br /> <span className="text-gold font-light italic">PVT LTD</span>
                     </motion.h1>
 
                     <motion.p
@@ -54,7 +54,7 @@ const HomeBanner = () => {
                         transition={{ duration: 1, delay: 0.8 }}
                         className="text-lg md:text-2xl text-cream/80 mb-10 font-light italic tracking-widest max-w-2xl mx-auto leading-relaxed"
                     >
-                        "A journey of scents, crafted for the soul."
+                        "A scent, sent from heaven"
                     </motion.p>
 
                     <motion.button

@@ -1,30 +1,56 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 
-const products = [
+const productCategories = [
     {
-        id: 1,
-        name: "Midnight Oudh",
-        price: "$120",
-        image: "https://images.unsplash.com/photo-1594035910387-fea4779426e9?q=80&w=800", // Placeholder
-        category: "Signature Collection"
+        id: "personal-care",
+        label: "Personal Care",
+        image: "https://images.unsplash.com/photo-1556228720-1957be979ea4?q=80&w=800",
+        items: ["Handwash", "Hand sanitizer", "Wet wipes", "Hair oil", "Shampoo", "Hair conditioner", "Body wash", "Toilet soap"]
     },
     {
-        id: 2,
-        name: "Royal Rose",
-        price: "$95",
-        image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=800", // Placeholder
-        category: "Floral Notes"
+        id: "beauty-care",
+        label: "Beauty Care",
+        image: "https://images.unsplash.com/photo-1571781565023-40f8d4752541?q=80&w=800",
+        items: ["Body lotion", "Face cream", "Facial scrub", "Makeup preparation", "Nail polish remover", "Talcum powder", "Hair gel & cream", "Shaving Preparation"]
     },
     {
-        id: 3,
-        name: "Amber Essence",
-        price: "$110",
-        image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=800", // Placeholder
-        category: "Oriental Series"
+        id: "fabric-care",
+        label: "Fabric Care",
+        image: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=800",
+        items: ["Detergent cake", "Detergent powder", "Laundry soap", "Fabric softener", "Liquid detergent"]
+    },
+    {
+        id: "home-care",
+        label: "Home Care",
+        image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800",
+        items: ["Dishwash paste/powder", "Dishwash bar", "Dishwash liquid", "Disinfectants", "Household cleaner"]
+    },
+    {
+        id: "fine-fragrances",
+        label: "Fine Fragrances",
+        image: "https://images.unsplash.com/photo-1523293188086-b51292955d2c?q=80&w=800",
+        items: ["Deodorant", "Roll-on", "Eau de parfum", "Eau de toilette"]
+    },
+    {
+        id: "air-care",
+        label: "Air Care",
+        image: "https://images.unsplash.com/photo-1602523961358-f9f03dd557db?q=80&w=800",
+        items: ["Scented candles", "Room freshener", "Incense stick", "Reed diffuser"]
+    },
+    {
+        id: "others",
+        label: "Others",
+        image: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?q=80&w=800",
+        items: ["Scented Papers", "Aroma for wall paints", "Scented pen inks", "Scented Artificial Flowers"]
     }
 ];
 
 const OurProducts = () => {
+    const [activeTab, setActiveTab] = useState(productCategories[0].id);
+
+    const activeCategory = productCategories.find(c => c.id === activeTab);
+
     return (
         <section id="products" className="py-24 bg-cream">
             <div className="container mx-auto px-6">
@@ -43,44 +69,74 @@ const OurProducts = () => {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="text-4xl md:text-5xl font-serif text-rich-black"
                     >
-                        Curated Elegance
+                        Curated Categories
                     </motion.h3>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                    {products.map((product, index) => (
-                        <motion.div
-                            key={product.id}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: index * 0.2 }}
-                            className="group relative cursor-pointer"
+                {/* Tabs */}
+                <div className="flex flex-wrap justify-center gap-4 mb-16">
+                    {productCategories.map((category) => (
+                        <button
+                            key={category.id}
+                            onClick={() => setActiveTab(category.id)}
+                            className={`px-8 py-3 rounded-full text-sm font-bold uppercase tracking-wider transition-all duration-300 border ${
+                                activeTab === category.id 
+                                ? 'bg-rich-black text-gold border-rich-black shadow-lg scale-105' 
+                                : 'bg-transparent text-gray-500 border-gray-300 hover:border-gold hover:text-gold'
+                            }`}
                         >
-                            <div className="aspect-[4/5] bg-white overflow-hidden relative shadow-sm">
-                                <img
-                                    src={product.image}
-                                    alt={product.name}
-                                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
-                                />
-                                {/* Overlay */}
-                                <div className="absolute inset-0 bg-rich-black/10 group-hover:bg-rich-black/20 transition-colors duration-300" />
-                                
-                                {/* Add to Cart / View Button */}
-                                <div className="absolute inset-x-0 bottom-0 p-6 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">
-                                    <button className="w-full bg-white text-rich-black py-4 uppercase tracking-widest text-xs font-bold hover:bg-gold hover:text-white transition-colors duration-300">
-                                        View Details
-                                    </button>
-                                </div>
-                            </div>
-                            
-                            <div className="text-center mt-6">
-                                <p className="text-xs text-gray-500 uppercase tracking-widest mb-2">{product.category}</p>
-                                <h4 className="text-xl font-serif text-rich-black mb-1">{product.name}</h4>
-                                <p className="text-gold-dark font-medium">{product.price}</p>
-                            </div>
-                        </motion.div>
+                            {category.label}
+                        </button>
                     ))}
                 </div>
+
+                {/* Content Area */}
+                <AnimatePresence mode='wait'>
+                    <motion.div
+                        key={activeTab}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        exit={{ opacity: 0, y: -20 }}
+                        transition={{ duration: 0.4 }}
+                        className="bg-white rounded-sm shadow-xl overflow-hidden min-h-[500px]"
+                    >
+                        <div className="flex flex-col md:flex-row h-full">
+                            {/* Image Side */}
+                            <div className="w-full md:w-2/5 relative h-[300px] md:h-auto">
+                                <img 
+                                    src={activeCategory.image} 
+                                    alt={activeCategory.label} 
+                                    className="w-full h-full object-cover"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-8">
+                                    <h4 className="text-3xl font-serif text-white">{activeCategory.label}</h4>
+                                </div>
+                            </div>
+
+                            {/* Items Grid Side */}
+                            <div className="w-full md:w-3/5 p-8 md:p-12 bg-white">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    {activeCategory.items.map((item, index) => (
+                                        <motion.div 
+                                            key={index}
+                                            initial={{ opacity: 0, x: 10 }}
+                                            animate={{ opacity: 1, x: 0 }}
+                                            transition={{ delay: index * 0.05 }}
+                                            className="flex items-center gap-4 p-4 rounded-lg border border-gray-100 hover:border-gold/30 hover:bg-cream/20 transition-all duration-300 group cursor-default"
+                                        >
+                                            <div className="w-10 h-10 rounded-full bg-cream flex items-center justify-center group-hover:bg-gold group-hover:text-white transition-colors duration-300">
+                                                <span className="font-serif italic font-bold">
+                                                    {index + 1}
+                                                </span>
+                                            </div>
+                                            <span className="text-gray-700 font-light text-lg group-hover:text-rich-black transition-colors">{item}</span>
+                                        </motion.div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+                </AnimatePresence>
             </div>
         </section>
     );

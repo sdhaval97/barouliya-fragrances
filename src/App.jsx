@@ -1,21 +1,23 @@
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
-import WhatWeDo from './pages/WhatWeDo';
-import Products from './pages/Products';
-import Contact from './pages/Contact';
+import HomeBanner from './components/sections/HomeBanner';
+import OurStory from './components/sections/OurStory';
+import OurProducts from './components/sections/OurProducts';
+import AboutUs from './components/sections/AboutUs';
+import BrandsTrusted from './components/sections/BrandsTrusted';
+import ContactUs from './components/sections/ContactUs';
 
 function App() {
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="w-full overflow-x-hidden bg-rich-black text-cream">
       <Navbar />
-      <div className="pt-20 md:pt-24">
-        <Home />
-        <About />
-        <WhatWeDo />
-        <Products />
-        <Contact />
-      </div>
+      <main>
+        <HomeBanner />
+        <OurStory />
+        <OurProducts />
+        <AboutUs />
+        <BrandsTrusted />
+        <ContactUs />
+      </main>
     </div>
   );
 }

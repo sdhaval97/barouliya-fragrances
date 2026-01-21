@@ -114,7 +114,7 @@ const Navbar = () => {
                 </AnimatePresence>
 
                 <button
-                    className="bg-gold text-rich-black w-14 h-14 rounded-full shadow-lg flex items-center justify-center hover:bg-white transition-colors duration-300 focus:outline-none"
+                    className="bg-gold text-rich-black w-14 h-14 rounded-full shadow-lg flex items-center justify-center active:scale-90 transition-transform duration-200 focus:outline-none"
                     onClick={toggleMenu}
                 >
                     <div className="w-6 flex flex-col gap-1.5 items-center justify-center">

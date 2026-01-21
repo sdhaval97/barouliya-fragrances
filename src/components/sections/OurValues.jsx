@@ -38,20 +38,13 @@ const OurValues = () => {
                         initial={{ opacity: 0, scale: 0.95 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.7 }}
-                        className="lg:w-1/2 flex gap-4"
+                        className="lg:w-1/2"
                     >
-                        <div className="w-1/2 pt-12">
+                         <div className="relative rounded-lg shadow-2xl overflow-hidden aspect-[3/4] max-w-md mx-auto">
                              <img 
                                 src="/images/download (3).jpeg" 
-                                alt="Perfumery Bottle" 
-                                className="w-full h-auto shadow-md"
-                            />
-                        </div>
-                         <div className="w-1/2">
-                             <img 
-                                src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?q=80&w=600" 
-                                alt="Fragrance Notes" 
-                                className="w-full h-auto shadow-md"
+                                alt="Perfumery Art" 
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     </motion.div>

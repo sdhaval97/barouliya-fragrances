@@ -19,7 +19,7 @@ const HomeBanner = () => {
             </motion.div>
 
             {/* Content */}
-            <div className="relative z-20 px-4 w-full h-full flex flex-col justify-center items-center pt-20">
+            <div className="relative z-20 px-4 w-full h-full flex flex-col justify-center items-center pb-20">
                 <motion.div 
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}

@@ -42,7 +42,7 @@ const OurValues = () => {
                     >
                         <div className="w-1/2 pt-12">
                              <img 
-                                src="https://images.unsplash.com/photo-1541108271386-dbdcdf3e32b4?q=80&w=600" 
+                                src="/images/download (3).jpeg" 
                                 alt="Perfumery Bottle" 
                                 className="w-full h-auto shadow-md"
                             />

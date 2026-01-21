@@ -58,16 +58,12 @@ const Navbar = () => {
                         </div>
 
                         {/* Mobile Logo (Centered) */}
-                        <div 
-                            className="md:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer w-full flex justify-center"
-                            onClick={() => scrollToSection('home')}
-                        >
-                             <img 
-                                src="/images/logo.png" 
-                                alt="Barouliya Fragrancia" 
-                                className="h-16 w-auto object-contain drop-shadow-md" 
-                             />
-                        </div>
+                    <div 
+                        className="md:hidden absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer w-full flex justify-center whitespace-nowrap"
+                        onClick={() => scrollToSection('home')}
+                    >
+                         <h1 className="text-lg font-serif font-bold text-gold tracking-[0.2em]">BAROULIYA FRAGRANCIA</h1>
+                    </div>
 
                         {/* Desktop Menu */}
                         <ul className="hidden md:flex gap-8 items-center">

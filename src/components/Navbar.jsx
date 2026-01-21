@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+    // Mobile navigation update
 
     useEffect(() => {
         const handleScroll = () => {

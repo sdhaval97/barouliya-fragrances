@@ -5,13 +5,13 @@ const productCategories = [
     {
         id: "personal-care",
         label: "Personal Care",
-        image: "https://images.unsplash.com/photo-1556228720-1957be979ea4?q=80&w=800",
+        image: "/images/pc.jpeg",
         items: ["Handwash", "Hand Sanitizer", "Wet Wipes", "Hair Oil", "Shampoo", "Hair Conditioner", "Body Wash", "Toilet Soap"]
     },
     {
         id: "beauty-care",
         label: "Beauty Care",
-        image: "https://images.unsplash.com/photo-1571781565023-40f8d4752541?q=80&w=800",
+        image: "/images/Natural%20Beauty_%20Transform%20Your%20Skin%20with%20Organic%20Creams.jpeg",
         items: ["Body Lotion", "Face Cream", "Facial Scrub", "Makeup Preparation", "Nail Polish Remover", "Talcum Powder", "Hair Gel & Cream", "Shaving Preparation"]
     },
     {
@@ -29,7 +29,7 @@ const productCategories = [
     {
         id: "fine-fragrances",
         label: "Fine Fragrances",
-        image: "https://images.unsplash.com/photo-1523293188086-b51292955d2c?q=80&w=800",
+        image: "/images/Download%20free%20image%20of%20Serum%20skincare%20packaging%20mockup%20bottle%20cosmetics%20perfume_%20by%20Benjamas%20about%20aesthetic%2C%20sea%2C%20water%2C%20nature%2C%20and%20sunlight%2014569514.jpeg",
         items: ["Deodorant", "Roll-On", "Eau De Parfum", "Eau De Toilette", "Eau De Cologne", "Attar", "Elixir", "Solid Perfume"]
     },
     {
@@ -122,14 +122,14 @@ const OurProducts = () => {
                                             initial={{ opacity: 0, x: 10 }}
                                             animate={{ opacity: 1, x: 0 }}
                                             transition={{ delay: index * 0.05 }}
-                                            className="flex items-center gap-4 p-4 rounded-lg border border-gray-100 hover:border-gold/30 hover:bg-cream/20 transition-all duration-300 group cursor-default"
+                                            className="flex items-center gap-4 p-4 rounded-lg border border-gold/30 bg-cream/20 transition-all duration-300 group cursor-default"
                                         >
-                                            <div className="w-10 h-10 rounded-full bg-cream flex items-center justify-center group-hover:bg-gold group-hover:text-white transition-colors duration-300">
+                                            <div className="w-10 h-10 rounded-full bg-gold text-white flex items-center justify-center transition-colors duration-300">
                                                 <span className="font-serif italic font-bold">
                                                     {index + 1}
                                                 </span>
                                             </div>
-                                            <span className="text-gray-700 font-light text-lg group-hover:text-rich-black transition-colors">{item}</span>
+                                            <span className="text-rich-black font-light text-lg transition-colors">{item}</span>
                                         </motion.div>
                                     ))}
                                 </div>

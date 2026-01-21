@@ -12,7 +12,7 @@ const OurValues = () => {
                         className="lg:w-1/2"
                     >
                         <h2 className="text-5xl md:text-6xl font-serif mb-12">
-                            Our <span className="italic font-light">Values</span>
+                            Our <span className="italic font-light">Vision</span>
                         </h2>
                         
                         <div className="bg-white p-10 shadow-lg border-l-4 border-gold">

@@ -98,7 +98,8 @@ const OurProducts = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.4 }}
-                        className="bg-white rounded-sm shadow-xl overflow-hidden min-h-[600px]"
+                        transition={{ duration: 0.4 }}
+                        className="bg-white rounded-sm shadow-xl overflow-hidden h-[600px]"
                     >
                         <div className="flex flex-col md:flex-row h-full">
                             {/* Image Side */}
@@ -114,7 +115,7 @@ const OurProducts = () => {
                             </div>
 
                             {/* Items Grid Side */}
-                            <div className="w-full md:w-3/5 p-8 md:p-12 bg-white">
+                            <div className="w-full md:w-3/5 p-8 md:p-12 bg-white overflow-y-auto custom-scrollbar">
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                     {activeCategory.items.map((item, index) => (
                                         <motion.div 

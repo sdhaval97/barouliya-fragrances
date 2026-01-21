@@ -1,6 +1,41 @@
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 const ContactUs = () => {
+    const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+    const [status, setStatus] = useState('idle'); // idle, submitting, success, error
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prev => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setStatus('submitting');
+        
+        try {
+            const data = new FormData();
+            data.append('name', formData.name);
+            data.append('email', formData.email);
+            data.append('message', formData.message);
+
+            await fetch("https://script.google.com/macros/s/AKfycbzqGQqg_1LRTI4I12DN56bQ3PrJk4DmwY21uDwiaKkyMGMd_ELNU2IIf_Q8BjvUnquq0w/exec", {
+                method: "POST",
+                body: data,
+                mode: "no-cors"
+            });
+
+            setStatus('success');
+            setFormData({ name: '', email: '', message: '' });
+            setTimeout(() => setStatus('idle'), 5000);
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            setStatus('error');
+            setTimeout(() => setStatus('idle'), 5000);
+        }
+    };
+
     return (
         <section id="contact" className="py-24 bg-rich-black relative">
              <div className="container mx-auto px-6 max-w-4xl">
@@ -33,20 +68,28 @@ const ContactUs = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 0.8 }}
                     className="space-y-6"
-                    onSubmit={(e) => e.preventDefault()}
+                    onSubmit={handleSubmit}
                 >
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="group">
                             <input 
-                                type="text" 
+                                type="text"
+                                name="name"
+                                value={formData.name}
+                                onChange={handleChange}
                                 placeholder="Your Name" 
+                                required
                                 className="w-full bg-transparent border-b border-cream/20 text-cream py-4 focus:outline-none focus:border-gold transition-colors duration-300 placeholder-white/30"
                             />
                         </div>
                         <div className="group">
                             <input 
-                                type="email" 
+                                type="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
                                 placeholder="Email Address" 
+                                required
                                 className="w-full bg-transparent border-b border-cream/20 text-cream py-4 focus:outline-none focus:border-gold transition-colors duration-300 placeholder-white/30"
                             />
                         </div>
@@ -55,15 +98,30 @@ const ContactUs = () => {
                     <div className="group">
                         <textarea 
                             rows="4" 
+                            name="message"
+                            value={formData.message}
+                            onChange={handleChange}
                             placeholder="Message" 
+                            required
                             className="w-full bg-transparent border-b border-cream/20 text-cream py-4 focus:outline-none focus:border-gold transition-colors duration-300 resize-none placeholder-white/30"
                         />
                     </div>
 
                     <div className="text-center mt-12">
-                        <button className="bg-gold text-rich-black px-12 py-4 uppercase tracking-[0.2em] text-sm font-bold hover:bg-white transition-colors duration-300">
-                            Send Message
+                        <button 
+                            type="submit"
+                            disabled={status === 'submitting'}
+                            className="bg-gold text-rich-black px-12 py-4 uppercase tracking-[0.2em] text-sm font-bold hover:bg-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                        >
+                            {status === 'submitting' ? 'Sending...' : 'Send Message'}
                         </button>
+                        
+                        {status === 'success' && (
+                            <p className="mt-4 text-green-400 text-sm tracking-wider">Message sent successfully!</p>
+                        )}
+                        {status === 'error' && (
+                            <p className="mt-4 text-red-400 text-sm tracking-wider">Something went wrong. Please try again.</p>
+                        )}
                     </div>
                 </motion.form>
 

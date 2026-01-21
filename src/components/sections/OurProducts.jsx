@@ -98,7 +98,7 @@ const OurProducts = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.4 }}
-                        className="bg-white rounded-sm shadow-xl overflow-hidden min-h-[750px]"
+                        className="bg-white rounded-sm shadow-xl overflow-hidden min-h-[600px]"
                     >
                         <div className="flex flex-col md:flex-row h-full">
                             {/* Image Side */}

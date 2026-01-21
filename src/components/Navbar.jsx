@@ -66,14 +66,6 @@ const Navbar = () => {
                             </button>
                         </li>
                     ))}
-                    <li>
-                         <button 
-                            onClick={() => scrollToSection('contact')}
-                            className="border border-gold text-gold hover:bg-gold hover:text-rich-black px-6 py-2 uppercase text-xs tracking-widest font-bold transition-all duration-300"
-                        >
-                            Contact Us
-                        </button>
-                    </li>
                 </ul>
 
                 {/* Mobile Menu Button */}

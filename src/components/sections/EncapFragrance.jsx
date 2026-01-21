@@ -17,19 +17,15 @@ const EncapFragrance = () => {
                    <motion.div 
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="md:w-2/3"
+                        className="w-full"
                     >
                        <h2 className="text-gold-dark text-sm font-bold tracking-[0.3em] uppercase mb-4">Our New Project</h2>
-                       <h3 className="text-4xl md:text-5xl font-serif text-rich-black leading-tight">
-                           ENCAP <span className="italic font-light">Fragrance</span>
-                       </h3>
-                   </motion.div>
-                   <motion.div 
-                        initial={{ opacity: 0, x: 20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        className="md:w-1/3 mt-6 md:mt-0 text-right"
-                   >
-                       <p className="text-lg text-gray-600 font-light italic">"Innovation that lasts."</p>
+                       <div className="flex flex-col md:flex-row md:items-end gap-4 md:gap-8">
+                           <h3 className="text-4xl md:text-5xl font-serif text-rich-black leading-tight">
+                               ENCAP <span className="italic font-light">Fragrance</span>
+                           </h3>
+                           <p className="text-xl text-gray-600 font-light italic mb-1 md:mb-2">"Innovation that lasts."</p>
+                       </div>
                    </motion.div>
                </div>
                

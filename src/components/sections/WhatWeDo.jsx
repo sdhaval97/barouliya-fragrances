@@ -20,8 +20,8 @@ const WhatWeDo = () => {
                     >
                         <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-xl">
                              <img 
-                                src="https://images.unsplash.com/photo-1616091216791-a5360b5fc78a?q=80&w=1000" 
-                                alt="Applying Fragrance" 
+                                src="/images/Glass Molecules - Nano Structure.jpeg" 
+                                alt="Fragrance R&D and Molecules" 
                                 className="w-full h-full object-cover"
                             />
                         </div>

@@ -51,7 +51,7 @@ const Navbar = () => {
                         alt="Barouliya Logo" 
                         className="h-14 w-auto object-contain drop-shadow-md"
                      />
-                     <h1 className="text-xl md:text-2xl font-serif font-bold text-gold tracking-[0.2em] hidden sm:block">BAROULIYA</h1>
+                     <h1 className="text-xl md:text-2xl font-serif font-bold text-gold tracking-[0.2em] hidden sm:block">BAROULIYA FRAGRANCIA</h1>
                 </div>
 
                 {/* Desktop Menu */}

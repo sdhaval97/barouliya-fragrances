@@ -86,17 +86,7 @@ const HomeBanner = () => {
             </div>
 
             {/* Scroll Indicator */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, y: [0, 10, 0] }}
-                transition={{ delay: 2, duration: 1.5, repeat: Infinity }}
-                className="absolute bottom-10 left-1/2 transform -translate-x-1/2 cursor-pointer z-30"
-                onClick={() => document.getElementById('story').scrollIntoView({ behavior: 'smooth' })}
-            >
-                <svg className="w-8 h-8 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                </svg>
-            </motion.div>
+
         </section>
     );
 };

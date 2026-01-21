@@ -18,11 +18,11 @@ const WhatWeDo = () => {
                         transition={{ duration: 0.8 }}
                         className="lg:w-1/2"
                     >
-                        <div className="relative aspect-[4/5] overflow-hidden rounded-sm shadow-xl">
+                        <div className="relative rounded-sm shadow-xl overflow-hidden">
                              <img 
-                                src="/images/Glass Molecules - Nano Structure.jpeg" 
+                                src="/images/Glass%20Molecules%20-%20Nano%20Structure.jpeg" 
                                 alt="Fragrance R&D and Molecules" 
-                                className="w-full h-full object-cover"
+                                className="w-full h-auto"
                             />
                         </div>
                     </motion.div>

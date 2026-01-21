@@ -102,11 +102,11 @@ const OurProducts = () => {
                     >
                         <div className="flex flex-col md:flex-row h-full">
                             {/* Image Side */}
-                            <div className="w-full md:w-2/5 relative h-[300px] md:h-auto">
+                            <div className="w-full md:w-2/5 relative h-[300px] md:h-auto flex-shrink-0">
                                 <img 
                                     src={activeCategory.image} 
                                     alt={activeCategory.label} 
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover object-center"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-8">
                                     <h4 className="text-3xl font-serif text-white">{activeCategory.label}</h4>

@@ -61,11 +61,11 @@ const HomeBanner = () => {
                         <motion.button
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            whileHover={{ scale: 1.05, backgroundColor: "#D4AF37", color: "#0A0A0A" }}
+                            whileHover={{ scale: 1.05, backgroundColor: "#D4AF37", color: "#0A0A0A", transition: { duration: 0 } }}
                             whileTap={{ scale: 0.95 }}
                             transition={{ duration: 0.3 }}
                             onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}
-                            className="border border-gold text-gold px-12 py-4 rounded-sm uppercase tracking-[0.2em] text-sm font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]"
+                            className="border border-gold text-gold px-12 py-4 rounded-sm uppercase tracking-[0.2em] text-sm font-bold hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]"
                         >
                             Explore Collection
                         </motion.button>
@@ -73,11 +73,11 @@ const HomeBanner = () => {
                         <motion.button
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            whileHover={{ scale: 1.05, backgroundColor: "#D4AF37", color: "#0A0A0A" }}
+                            whileHover={{ scale: 1.05, backgroundColor: "#D4AF37", color: "#0A0A0A", transition: { duration: 0 } }}
                             whileTap={{ scale: 0.95 }}
                             transition={{ duration: 0.3, delay: 0.1 }}
                             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-                            className="bg-gold/10 backdrop-blur-sm border border-gold text-gold px-12 py-4 rounded-sm uppercase tracking-[0.2em] text-sm font-bold transition-all duration-300 hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]"
+                            className="bg-gold/10 backdrop-blur-sm border border-gold text-gold px-12 py-4 rounded-sm uppercase tracking-[0.2em] text-sm font-bold hover:shadow-[0_0_20px_rgba(212,175,55,0.3)]"
                         >
                             Contact Us
                         </motion.button>

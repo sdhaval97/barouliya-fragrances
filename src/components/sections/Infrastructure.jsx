@@ -44,6 +44,16 @@ const Infrastructure = () => {
                                 "Our laboratory is operated by a highly skilled perfumer with a doctorate in the field, whose expertise ensures that every fragrance is crafted with precision and creativity."
                             </p>
                         </div>
+                        
+                        <motion.button
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2 }}
+                            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                            className="mt-8 bg-rich-black text-white px-8 py-3 rounded-sm uppercase tracking-[0.2em] text-xs font-bold hover:bg-gold hover:text-rich-black transition-all duration-300 shadow-lg hover:shadow-gold/20"
+                        >
+                            Partner With Us
+                        </motion.button>
                     </motion.div>
                 </div>
             </div>

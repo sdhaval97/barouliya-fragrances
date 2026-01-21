@@ -35,6 +35,16 @@ const SignatureOffering = () => {
                                 The blending process involves layering top, middle, and base notes to create a well-rounded and harmonious scent. Top notes provide the initial impression and are often light and refreshing, while middle notes form the heart of the fragrance with more complex, lasting aromas. Base notes add depth and longevity, anchoring the scent with rich, enduring qualities.
                             </p>
                         </div>
+
+                        <motion.button
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2 }}
+                            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                            className="mt-8 border border-gold text-gold px-8 py-3 rounded-sm uppercase tracking-[0.2em] text-xs font-bold hover:bg-gold hover:text-rich-black transition-all duration-300"
+                        >
+                            Create Your Signature Scent
+                        </motion.button>
                     </div>
 
                     <div className="md:w-1/2">

@@ -54,7 +54,18 @@ const EncapFragrance = () => {
                         </motion.div>
                     ))}
                 </div>
-           </div>
+            </div>
+            
+            <div className="text-center mt-16">
+                 <motion.button
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                    className="border border-gold-dark text-gold-dark px-10 py-3 rounded-sm uppercase tracking-[0.2em] text-xs font-bold hover:bg-gold-dark hover:text-white transition-all duration-300"
+                >
+                    Inquire About Encap
+                </motion.button>
+            </div>
         </section>
     );
 };

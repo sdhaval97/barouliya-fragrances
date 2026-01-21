@@ -30,7 +30,7 @@ const OurStory = () => {
                                 <p className="text-sm text-cream/50 tracking-widest uppercase mt-2">Years of Legacy</p>
                             </div>
                             <div>
-                                <h4 className="text-3xl font-serif text-gold">50+</h4>
+                                <h4 className="text-3xl font-serif text-gold">500+</h4>
                                 <p className="text-sm text-cream/50 tracking-widest uppercase mt-2">Unique Blends</p>
                             </div>
                         </div>

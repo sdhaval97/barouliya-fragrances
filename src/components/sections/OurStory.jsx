@@ -44,12 +44,12 @@ const OurStory = () => {
                         transition={{ duration: 0.8 }}
                         className="w-full md:w-1/2 relative"
                     >
-                        <div className="relative aspect-[4/5] overflow-hidden">
-                            <div className="absolute inset-0 border border-gold/30 translate-x-4 translate-y-4 z-0" />
+                        <div className="relative aspect-[4/5]">
+                            <div className="absolute inset-0 border-2 border-gold/30 translate-x-4 translate-y-4 z-0 rounded-2xl" />
                             <img
                                 src="/images/Kannauj-Perfume-Making-PradeepGaurs-Shutterstock_2048x2048.png"
                                 alt="Perfumery Art"
-                                className="relative z-10 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                                className="relative z-10 w-full h-full object-cover rounded-2xl shadow-2xl transition-all duration-700"
                             />
                         </div>
                     </motion.div>

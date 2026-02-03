@@ -19,12 +19,12 @@ const HomeBanner = () => {
             </motion.div>
 
             {/* Content */}
-            <div className="relative z-20 px-4 w-full h-full flex flex-col justify-center items-center pb-20">
+            <div className="relative z-20 px-4 w-full h-full flex flex-col justify-center items-center pt-20">
                 <motion.div 
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
-                    className="border border-white/10 bg-white/5 backdrop-blur-sm p-8 md:p-16 text-center max-w-4xl mx-auto rounded-sm shadow-2xl relative overflow-hidden"
+                    className="border border-white/10 bg-white/5 backdrop-blur-sm p-8 md:p-10 text-center max-w-5xl mx-auto rounded-sm shadow-2xl relative overflow-hidden"
                 >
                     {/* Decorative Elements */}
                     <div className="absolute top-0 left-0 w-20 h-20 border-t border-l border-gold/50 -translate-x-4 -translate-y-4" />
@@ -34,7 +34,7 @@ const HomeBanner = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.8 }}
-                        className="text-gold-light uppercase tracking-[0.4em] text-xs md:text-sm mb-6 font-medium"
+                        className="text-gold-light uppercase tracking-[0.4em] text-xs md:text-sm mb-4 font-medium"
                     >
                         Est. 1920
                     </motion.p>
@@ -43,7 +43,7 @@ const HomeBanner = () => {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 1, delay: 0.5 }}
-                        className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-6 tracking-wide drop-shadow-lg"
+                        className="text-4xl md:text-6xl lg:text-7xl font-serif text-white mb-4 tracking-wide drop-shadow-lg"
                     >
                         BAROULIYA FRAGRANCIA <br /> <span className="text-gold font-light italic">PVT LTD</span>
                     </motion.h1>
@@ -52,7 +52,7 @@ const HomeBanner = () => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.8 }}
-                        className="text-lg md:text-2xl text-cream/80 mb-10 font-light italic tracking-widest max-w-2xl mx-auto leading-relaxed"
+                        className="text-lg md:text-2xl text-cream/80 mb-8 font-light italic tracking-widest max-w-2xl mx-auto leading-relaxed"
                     >
                         "A scent, sent from heaven"
                     </motion.p>

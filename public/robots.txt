@@ -1,0 +1,8 @@
+# Allow all crawlers by default
+User-agent: *
+Allow: /
+
+# To block specific old pages or folders from being crawled, add them below:
+# Disallow: /old-page.html
+# Disallow: /old-folder/
+# Disallow: /cgi-bin/
